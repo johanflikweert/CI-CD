@@ -16,7 +16,7 @@ const startingCheckingInterval = 5000; //in ms
 const environment = 'Acceptance'; //values: Test, Acceptance, Production
 const headers = {
 	"mendix-UserName": 'jonathan.deloo@firstconsulting.nl',
-	"mendix-APIKey": 'toprovide'
+	"mendix-APIKey": 'c8a105a1-9285-46f4-82bc-2b1b70dc66e4'
 };
 
 //unused (but required/helpful in future to avoid script running eternally)
