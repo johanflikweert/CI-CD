@@ -1,22 +1,21 @@
-/* var program_name = process.argv[0]; //value will be "node"
-var script_path = process.argv[1]; //value will be "yourscript.js"
-const first_value = process.argv[2]; //value will be "banana"
-const second_value = process.argv[3]; //value will be "monkey"
+const appToDeploy = process.argv[2]; 
+const branchToDeploy = process.argv[3];
+const environment = process.argv[4]; 
+const MxUsername = process.argv[5];
+const MxAPIKey = process.argv[6];
 
-console.log(first_value)
-console.log(second_value)
-console.log(script_path)
-console.log(program_name) */
+
+console.log(appToDeploy)
+console.log(branchToDeploy)
+console.log(environment)
+console.log(MxUsername)
+console.log(MxAPIKey)
+
 
 //input
-const appToDeploy = 'style test';
-const branchToDeploy = 'trunk'; //trunk is mainline
-const packageCheckingInterval = 10000; //in ms
-const startingCheckingInterval = 5000; //in ms
-const environment = 'Acceptance'; //values: Test, Acceptance, Production
 const headers = {
-	"mendix-UserName": 'jonathan.deloo@firstconsulting.nl',
-	"mendix-APIKey": 'c8a105a1-9285-46f4-82bc-2b1b70dc66e4'
+	"mendix-UserName": MxUsername,
+	"mendix-APIKey": MxAPIKey
 };
 
 //unused (but required/helpful in future to avoid script running eternally)
