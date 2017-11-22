@@ -18,6 +18,11 @@ const headers = {
 	"mendix-APIKey": MxAPIKey
 };
 
+
+//fixed values for now
+const packageCheckingInterval = 10000; //in ms
+const startingCheckingInterval = 5000; //in ms
+
 //unused (but required/helpful in future to avoid script running eternally)
 const maxWaitMinsForPackageBuilding = 10;
 const maxWaitMinsForAppStarting = 10;
