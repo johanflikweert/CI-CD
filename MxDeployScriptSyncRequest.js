@@ -17,7 +17,7 @@ const headers = {
 	"mendix-APIKey": MxAPIKey
 };
 
-//unused values for now
+//fixed values for now
 const packageCheckingInterval = 10000; //in ms
 const startingCheckingInterval = 5000; //in ms
 
@@ -264,13 +264,13 @@ if(branch.LatestRevisionNumber > environmentPackage.Version.substring(environmen
 				}				
 
 											
-			},5000,headers,appId,environment,startStatus.JobId);
+			},startingCheckingInterval,headers,appId,environment,startStatus.JobId);
 			
 		} else {
 			console.log('Still building');		
 		}
 		
-	},10000,headers,appId,packageId);
+	},packageCheckingInterval,headers,appId,packageId);
 	
 } else {
 	console.log('Latest revision already deployed on ' + environment);
