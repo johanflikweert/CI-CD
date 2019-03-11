@@ -2,6 +2,6 @@
   "name": "MyScript",
   "version": "1.0.0",
   "scripts": {
-    "start": "MyScript.js",
+    "start": "MyScript.js"
   }
 }
