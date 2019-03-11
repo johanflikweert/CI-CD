@@ -2,6 +2,6 @@
   "name": "MyScript",
   "version": "1.0.0",
   "scripts": {
-    "build": "MyScript.js"
+    "build": "node MyScript.js"
   }
 }
